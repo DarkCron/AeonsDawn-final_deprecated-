@@ -1,0 +1,51 @@
+ACTIVE SCRIPT TAGS, these tags are checked when the script is running
+Active Script Tag	@AST
+Repeat Tag			@TRE
+Unique Tag			@TUN	-> ScriptBool
+SE Tag				@TSE-int-int
+Music Tag			@TMU
+Complex Choice Tag	@C-C
+Choice Tag			@T-C	->ScriptBool
+2:					@T2C
+3:					@T3C
+4:					@T4C
+@T4C-boolID@text1@text2@text3@text4
+@C4C-boolID1-text1-boolID2-text2-...
+Map Choice Tag		@MCT-int	scriptbool identifier
+Global Choice Tag	@GCT
+
+Emote Tag			@TEM
+~>For possibly displaying those "emote" heads on the side...
+Tension Tag			@TTE
+~>Different effects of the sprite onscreen, like shaking or jumping ect...
+Completion Tag		@TCO	->ScriptBool
+ID Tag				@TID
+~>Checks whether a certain completion tag is marked as complete.
+Screen Effect TAG	@TSC
+~>Like fade-in/out
+Change Tile Tag		@TCT-TileSheetName(WithoutExtension)-NewTileID-PositionGrid
+Scene Update Tag	@TSU
+~>Allows gamescreen to be updated while "text box" is open
+~>Needs to be repeated if you want it to be applied after certain tags. 
+Play Animation Tag	@TPA-int-int	->Continue script after animation complete.
+Play Animation Tag	@PAE-int-int-int->Continue script after animation complete. End with animation of last index
+Camera Move TO		@TCM	->Stop updating scene, and continue script after moving is done
+					@TCU	->Allows updating of the rest of the game while camera is moving
+Is Active			@TIA	
+Player Controller	@TPC	
+Comp Controller		@TCC
+Level Load Tag		@TLL		
+Start Point Game	@TSP-party index		
+Tag BG script		@TBS
+
+
+BOTH
+Tag change opacity	@TIV-int
+Tag change opacity	@TIS-int-int
+If Tag script		@TIF-int-int
+End IF tag			@END
+
+END SCRIPT TAGS, place these anywhere within a logic script block, these will be executed only once after a script has ended.
+Separator tag				@ESE separates active script from end execution script
+ENd Script Tag				@TES
+Tag resest active script	@RAS

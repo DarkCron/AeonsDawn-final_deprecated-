@@ -1,0 +1,1 @@
+﻿Don't put your custom files in this folder, they will be skipped. Instead put them in the application folder under content in the mods folder (or subfolders within mods), thank you.

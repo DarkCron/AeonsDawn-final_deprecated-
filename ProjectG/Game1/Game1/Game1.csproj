@@ -1,0 +1,1365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8EDC7C1-C288-44CD-8776-8928B5584A9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TBAGW</RootNamespace>
+    <AssemblyName>Aeons Dawn</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <MonoGameContentBuilderExe>
+    </MonoGameContentBuilderExe>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Workspace\Builds\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>20</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;STEAMWORKS_WIN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows\Release\</OutputPath>
+    <DefineConstants>TRACE;STEAMWORKS_WIN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>574690946AC8DE94D39F5D0F8A6E5B817DE1E037</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Game1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TBAGW.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'STEAMWORK_WIN|x86'">
+    <OutputPath>bin\x86\STEAMWORK_WIN\</OutputPath>
+    <DefineConstants>WINDOWS</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'STEAMWORK_WIN|x64'">
+    <OutputPath>bin\x64\STEAMWORK_WIN\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'STEAMWORKS_WIN|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\STEAMWORKS_WIN\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;STEAMWORKS_WIN</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'STEAMWORKS_WIN|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\STEAMWORKS_WIN\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DRMFREE|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\DRMFREE\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DRMFREE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DRMFREE|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\DRMFREE\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SpriteSheetPacker|x86'">
+    <OutputPath>bin\x86\SpriteSheetPacker\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SpriteSheetPacker|x64'">
+    <OutputPath>bin\x64\SpriteSheetPacker\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'C++|x86'">
+    <OutputPath>bin\x86\C++\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'C++|x64'">
+    <OutputPath>bin\x64\C++\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Abilities\AbilityEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Abilities\AbilityEditor.Designer.cs">
+      <DependentUpon>AbilityEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Abilities\CharAbilitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Abilities\CharAbilitiesForm.Designer.cs">
+      <DependentUpon>CharAbilitiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Animation\AnimationEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Animation\AnimationEditor.Designer.cs">
+      <DependentUpon>AnimationEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bools\ScrptBoolCheckEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bools\ScrptBoolCheckEditor.Designer.cs">
+      <DependentUpon>ScrptBoolCheckEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CharacterEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CharacterEditorForm.Designer.cs">
+      <DependentUpon>CharacterEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Characters\CharacterPortraitEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Characters\CharacterPortraitEditor.Designer.cs">
+      <DependentUpon>CharacterPortraitEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Characters\CharacterUniqueEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Characters\CharacterUniqueEditor.Designer.cs">
+      <DependentUpon>CharacterUniqueEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Characters\ClassCollectionEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Characters\ClassCollectionEditor.Designer.cs">
+      <DependentUpon>ClassCollectionEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FTP Utility\FTPWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FTP Utility\FTPWindow.Designer.cs">
+      <DependentUpon>FTPWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameClasses\AbilitySelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameClasses\AbilitySelector.Designer.cs">
+      <DependentUpon>AbilitySelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameClasses\ClassLevelUpLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameClasses\ClassLevelUpLayout.Designer.cs">
+      <DependentUpon>ClassLevelUpLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameClasses\CreateClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameClasses\CreateClassForm.Designer.cs">
+      <DependentUpon>CreateClassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameClasses\ExperienceLayoutEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameClasses\ExperienceLayoutEditor.Designer.cs">
+      <DependentUpon>ExperienceLayoutEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameClasses\GameClassCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameClasses\GameClassCreator.Designer.cs">
+      <DependentUpon>GameClassCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameObjects\CopyCharForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameObjects\CopyCharForm.Designer.cs">
+      <DependentUpon>CopyCharForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameObjects\GlobalObjectEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameObjects\GlobalObjectEditor.Designer.cs">
+      <DependentUpon>GlobalObjectEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameObjects\ObjectGroupEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameObjects\ObjectGroupEditorForm.Designer.cs">
+      <DependentUpon>ObjectGroupEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameObjects\ObjectInfoWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameObjects\ObjectInfoWindow.Designer.cs">
+      <DependentUpon>ObjectInfoWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameObjects\ObjectManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameObjects\ObjectManager.Designer.cs">
+      <DependentUpon>ObjectManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameObjects\ObjectSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameObjects\ObjectSelector.Designer.cs">
+      <DependentUpon>ObjectSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameObjects\SpriteEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameObjects\SpriteEditorForm.Designer.cs">
+      <DependentUpon>SpriteEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\General\ActiveSTATForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\General\ActiveSTATForm.Designer.cs">
+      <DependentUpon>ActiveSTATForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\General\ModifierEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\General\ModifierEditor.Designer.cs">
+      <DependentUpon>ModifierEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\General\STATChartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\General\STATChartForm.Designer.cs">
+      <DependentUpon>STATChartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\ConsumableEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\ConsumableEditor.Designer.cs">
+      <DependentUpon>ConsumableEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\EquipItemEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\EquipItemEditor.Designer.cs">
+      <DependentUpon>EquipItemEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\EquipmentSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\EquipmentSelection.Designer.cs">
+      <DependentUpon>EquipmentSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\ItemCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\ItemCreator.Designer.cs">
+      <DependentUpon>ItemCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\ItemFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\ItemFind.Designer.cs">
+      <DependentUpon>ItemFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\ItemSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\ItemSelection.Designer.cs">
+      <DependentUpon>ItemSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\KeyItemEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\KeyItemEditor.Designer.cs">
+      <DependentUpon>KeyItemEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\MaterialEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\MaterialEditor.Designer.cs">
+      <DependentUpon>MaterialEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\SimpleEquipmentSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemCreation\SimpleEquipmentSelection.Designer.cs">
+      <DependentUpon>SimpleEquipmentSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Loot editor\LootEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Loot editor\LootEditor.Designer.cs">
+      <DependentUpon>LootEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Loot editor\LootItemInfoEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Loot editor\LootItemInfoEditor.Designer.cs">
+      <DependentUpon>LootItemInfoEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NPC Editor\NPC Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NPC Editor\NPC Editor.Designer.cs">
+      <DependentUpon>NPC Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Particle Animation\PAEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Particle Animation\PAEditor.Designer.cs">
+      <DependentUpon>PAEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Particle Animation\PASelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Particle Animation\PASelection.Designer.cs">
+      <DependentUpon>PASelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ParticleEditor\ParticleEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ParticleEditor\ParticleEditor.Designer.cs">
+      <DependentUpon>ParticleEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PlayTestForms\GenerateRandomZoneEncounterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlayTestForms\GenerateRandomZoneEncounterForm.Designer.cs">
+      <DependentUpon>GenerateRandomZoneEncounterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\CommandSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\CommandSelectForm.Designer.cs">
+      <DependentUpon>CommandSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptBaseForm.Designer.cs">
+      <DependentUpon>ScriptBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\CPPCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\CPPCommand.Designer.cs">
+      <DependentUpon>CPPCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\CSBCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\CSBCommand.Designer.cs">
+      <DependentUpon>CSBCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\CTMCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\CTMCommand.Designer.cs">
+      <DependentUpon>CTMCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\CWBCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\CWBCommand.Designer.cs">
+      <DependentUpon>CWBCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\DLHCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\DLHCommand.Designer.cs">
+      <DependentUpon>DLHCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\DSTCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\DSTCommand.Designer.cs">
+      <DependentUpon>DSTCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\DTTCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\DTTCommand.Designer.cs">
+      <DependentUpon>DTTCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\LayoutSTD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\LayoutSTD.Designer.cs">
+      <DependentUpon>LayoutSTD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\MCTCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\MCTCommand.Designer.cs">
+      <DependentUpon>MCTCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\MSGCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\MSGCommand.Designer.cs">
+      <DependentUpon>MSGCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TEXTCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TEXTCommand.Designer.cs">
+      <DependentUpon>TEXTCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TGOCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TGOCommand.Designer.cs">
+      <DependentUpon>TGOCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\THECommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\THECommand.Designer.cs">
+      <DependentUpon>THECommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TIFCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TIFCommand.Designer.cs">
+      <DependentUpon>TIFCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TLBCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TLBCommand.Designer.cs">
+      <DependentUpon>TLBCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TLHCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TLHCommand.Designer.cs">
+      <DependentUpon>TLHCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TPHCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TPHCommand.Designer.cs">
+      <DependentUpon>TPHCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TRECommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TRECommand.Designer.cs">
+      <DependentUpon>TRECommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TRCCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TRCCommand.Designer.cs">
+      <DependentUpon>TRCCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TSMCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TSMCommand.Designer.cs">
+      <DependentUpon>TSMCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TSPCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptCommandForms\TSPCommand.Designer.cs">
+      <DependentUpon>TSPCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\ScriptOverview.Designer.cs">
+      <DependentUpon>ScriptOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\TestWarningPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForms\TestWarningPopUp.Designer.cs">
+      <DependentUpon>TestWarningPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SoundEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SoundEditorForm.Designer.cs">
+      <DependentUpon>SoundEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sound\SongEncrypt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sound\SongEncrypt.Designer.cs">
+      <DependentUpon>SongEncrypt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sound\SoundFXCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sound\SoundFXCreator.Designer.cs">
+      <DependentUpon>SoundFXCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TileSheetEditor\ProcessSheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TileSheetEditor\ProcessSheetForm.Designer.cs">
+      <DependentUpon>ProcessSheetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ZonesRegions\AddEnemyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ZonesRegions\AddEnemyForm.Designer.cs">
+      <DependentUpon>AddEnemyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ZonesRegions\RegionEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ZonesRegions\RegionEditor.Designer.cs">
+      <DependentUpon>RegionEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ZonesRegions\ZoneEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ZonesRegions\ZoneEditor.Designer.cs">
+      <DependentUpon>ZoneEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameHandle\GameProcessor.cs" />
+    <Compile Include="Maps\MapCollection.cs" />
+    <Compile Include="NVClass.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Scenes\Editor\AnimationEditor.cs" />
+    <Compile Include="Scenes\Editor\Editor.cs" />
+    <Compile Include="Scenes\Editor\GeneralEditor.cs" />
+    <Compile Include="Scenes\Editor\HitboxEditor.cs" />
+    <Compile Include="Scenes\Editor\MapEditorSub\MapBuilder.cs" />
+    <Compile Include="Scenes\Editor\MapEditorSub\MapEditor.cs" />
+    <Compile Include="Scenes\Editor\MapEditorSub\MapEditorControls.cs" />
+    <Compile Include="Scenes\Editor\MapEditorSub\TalentGridEditor.cs" />
+    <Compile Include="Scenes\Editor\SpriteEditor.cs" />
+    <Compile Include="Scenes\Editor\SpriteEditorSub\BasicSpriteFinalize.cs" />
+    <Compile Include="Scenes\Editor\SpriteEditorSub\SpriteCollisionPicker.cs" />
+    <Compile Include="Scenes\Editor\SpriteEditorSub\SpriteCollisionSelect.cs" />
+    <Compile Include="Scenes\Editor\SpriteEditorSub\SpritePicker.cs" />
+    <Compile Include="Scenes\Editor\SpriteEditorSub\SpriteTypeSelection.cs" />
+    <Compile Include="Scenes\Editor\SpriteEditorSub\Types\SimpleTypeSpriteEditor.cs" />
+    <Compile Include="Scenes\MainGame\Battle\BattleGUI\BattleGUI.cs" />
+    <Compile Include="Utilities\AI\AIBehaviour.cs" />
+    <Compile Include="Utilities\AI\AIUtility.cs" />
+    <Compile Include="Utilities\AI\EnemyAIInfo.cs" />
+    <Compile Include="Utilities\AI\PathFinder.cs" />
+    <Compile Include="Utilities\Characters\BaseCharacter.cs" />
+    <Compile Include="Utilities\Characters\CLASSES\BaseClass.cs" />
+    <Compile Include="Utilities\Characters\CLASSES\CharacterClassCollection.cs" />
+    <Compile Include="Utilities\Characters\CLASSES\ClassPoints.cs" />
+    <Compile Include="Utilities\Control\Player\ContextControllers\GameSettingsMenuCtrl.cs" />
+    <Compile Include="Utilities\Control\Player\ContextControllers\GameOptionsMenuCtrl.cs" />
+    <Compile Include="Utilities\Control\Player\ContextControllers\ScriptProcessorCtrl.cs" />
+    <Compile Include="Utilities\Control\Player\ContextControllers\StartScreenCtrl.cs" />
+    <Compile Include="Utilities\Control\TimingUtility.cs" />
+    <Compile Include="Utilities\Crafting\CharSpecialization.cs" />
+    <Compile Include="Utilities\Characters\CLASSES\ClassExp.cs" />
+    <Compile Include="Utilities\Characters\SpriteMoveHandler.cs" />
+    <Compile Include="Utilities\Characters\STATS\STATChart.cs" />
+    <Compile Include="Utilities\Characters\TEAM\BaseTeam.cs" />
+    <Compile Include="Utilities\Control\Player\ContextControllers\CombatCtrl.cs" />
+    <Compile Include="Utilities\Control\Player\ContextControllers\DialogueCtrl.cs" />
+    <Compile Include="Utilities\Control\Player\ContextControllers\ExpGainCtrl.cs" />
+    <Compile Include="Utilities\Control\Player\ContextControllers\MenuCtrl.cs" />
+    <Compile Include="Utilities\Control\Player\ContextControllers\NonCombatCtrl.cs" />
+    <Compile Include="Utilities\Control\Player\ContextControllers\SoloCombatCtrl.cs" />
+    <Compile Include="Utilities\Control\Player\PlayerController.cs" />
+    <Compile Include="Utilities\Crafting\SpecItaration.cs" />
+    <Compile Include="Utilities\DefaultValues.cs" />
+    <Compile Include="Utilities\Design\KeyRebindDesign.cs" />
+    <Compile Include="Utilities\Design\ScrollPanel.cs" />
+    <Compile Include="Utilities\Design\SelectableElement.cs" />
+    <Compile Include="Utilities\Design\TexPanel.cs" />
+    <Compile Include="Utilities\Display\GameScreenEffect.cs" />
+    <Compile Include="Utilities\Display\UIElement.cs" />
+    <Compile Include="Utilities\Editor\General\FormUtilities.cs" />
+    <Compile Include="Utilities\Editor\IO\EditorFileWriter.cs" />
+    <Compile Include="Utilities\Editor\IO\Encrypter.cs" />
+    <Compile Include="Utilities\Environment\DayLightHandler.cs" />
+    <Compile Include="Utilities\Environment\EnvironmentEvent.cs" />
+    <Compile Include="Utilities\Environment\EnvironmentHandler.cs" />
+    <Compile Include="Utilities\Environment\LightningEffect.cs" />
+    <Compile Include="Utilities\GamedataControl\BaseShop.cs" />
+    <Compile Include="Utilities\GamedataControl\GameDataControlUtility.cs" />
+    <Compile Include="Utilities\GamedataControl\GameDataHolder.cs" />
+    <Compile Include="Utilities\GameMenu\AbilityLineupInfo.cs" />
+    <Compile Include="Utilities\GameMenu\ClassLineupInfo.cs" />
+    <Compile Include="Utilities\GameMenu\ClassPointLineupInfo.cs" />
+    <Compile Include="Utilities\GameMenu\GameMenuHandler.cs" />
+    <Compile Include="Utilities\GamePlay\Abilities\BasicAbility.cs" />
+    <Compile Include="Utilities\GamePlay\Battle\BattleProcessor.cs" />
+    <Compile Include="Utilities\GamePlay\Battle\CombatArrowLayout.cs" />
+    <Compile Include="Utilities\GamePlay\Battle\DangerTile.cs" />
+    <Compile Include="Utilities\GamePlay\Battle\EncounterGenerator.cs" />
+    <Compile Include="Utilities\GamePlay\Battle\EncounterInfo.cs" />
+    <Compile Include="Utilities\GamePlay\Battle\EncounterObjective.cs" />
+    <Compile Include="Utilities\GamePlay\Battle\PlayerSetupPhase.cs" />
+    <Compile Include="Utilities\GamePlay\Battle\StatDisplayChart.cs" />
+    <Compile Include="Utilities\GamePlay\Battle\TacticalTextPopUp.cs" />
+    <Compile Include="Utilities\GamePlay\Battle\TurnLogic\CharacterTurn.cs" />
+    <Compile Include="Utilities\GamePlay\Battle\TurnLogic\TurnInfo.cs" />
+    <Compile Include="Utilities\GamePlay\Battle\TurnLogic\TurnSet.cs" />
+    <Compile Include="Utilities\GamePlay\Characters\CharacterCombatInfo.cs" />
+    <Compile Include="Utilities\GamePlay\GameContentDataBase.cs" />
+    <Compile Include="Utilities\GamePlay\Items\BaseItem.cs" />
+    <Compile Include="Utilities\GamePlay\Items\Consumables\BaseConsumable.cs" />
+    <Compile Include="Utilities\GamePlay\Items\Equipment\BaseEquipment.cs" />
+    <Compile Include="Utilities\GamePlay\Items\KeyItems\BaseKeyItem.cs" />
+    <Compile Include="Utilities\GamePlay\Items\Materials\BaseMaterials.cs" />
+    <Compile Include="Utilities\GamePlay\LootGenerator.cs" />
+    <Compile Include="Utilities\GamePlay\Modifiers, Effects and Status\ActiveStatModifier.cs" />
+    <Compile Include="Utilities\GamePlay\Modifiers, Effects and Status\BaseModifier.cs" />
+    <Compile Include="Utilities\GamePlay\Modifiers, Effects and Status\BaseEffect.cs" />
+    <Compile Include="Utilities\GamePlay\Modifiers, Effects and Status\BasicStatus.cs" />
+    <Compile Include="Utilities\GamePlay\Movement\PathMoveHandler.cs" />
+    <Compile Include="Utilities\GamePlay\Traits\BaseTrait.cs" />
+    <Compile Include="Utilities\GlobalGameData.cs" />
+    <Compile Include="Utilities\IdentifiableShapeList.cs" />
+    <Compile Include="Scenes\MainGame\ContinueGameScene.cs" />
+    <Compile Include="Scenes\MainGame\MainGame.cs" />
+    <Compile Include="Scenes\MainGame\NewGameScene.cs" />
+    <Compile Include="Scenes\MainGame\OWGame.cs" />
+    <Compile Include="Scenes\MainMenu\MainMenu.cs" />
+    <Compile Include="Scenes\Options\Options.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenes\Scene.cs" />
+    <Compile Include="Utilities\Actions\ActionCancel.cs" />
+    <Compile Include="Utilities\Actions\ActionConfirm.cs" />
+    <Compile Include="Utilities\Actions\ActionKey.cs" />
+    <Compile Include="Utilities\Actions\ActionMoveDown.cs" />
+    <Compile Include="Utilities\Actions\ActionMoveLeft.cs" />
+    <Compile Include="Utilities\Actions\ActionMoveRight.cs" />
+    <Compile Include="Utilities\Actions\ActionMoveUp.cs" />
+    <Compile Include="Utilities\Actions\ActionPause.cs" />
+    <Compile Include="Utilities\Actions\Actions.cs" />
+    <Compile Include="Utilities\Animation\Animation.cs" />
+    <Compile Include="Utilities\Animation\AnimationUtility.cs" />
+    <Compile Include="Utilities\buttonPressUtility.cs" />
+    <Compile Include="Utilities\GamePlayUtility.cs" />
+    <Compile Include="Utilities\GamePlay\Characters\BaseCharacter.cs" />
+    <Compile Include="Utilities\GamePlay\Characters\BaseCharAsset.cs" />
+    <Compile Include="Utilities\GamePlay\Characters\CharacterAssetsLoader.cs" />
+    <Compile Include="Utilities\GamePlay\Characters\Friendly\BasicHero.cs" />
+    <Compile Include="Utilities\GamePlay\Characters\Friendly\HeroAsset.cs" />
+    <Compile Include="Utilities\GamePlay\Characters\Friendly\Team\BasicTeamUtility.cs" />
+    <Compile Include="Utilities\GamePlay\Spells\ShotPattern\ManualShotPattern.cs" />
+    <Compile Include="Utilities\Input\ActiveInputButton.cs" />
+    <Compile Include="Utilities\Input\ActiveInputButtonUtility.cs" />
+    <Compile Include="Utilities\Input\GamePadUtility.cs" />
+    <Compile Include="Utilities\Inventory\InventoryManager.cs" />
+    <Compile Include="Utilities\Inventory\PickUp\PickUpEntity.cs" />
+    <Compile Include="Utilities\Inventory\PlayerInventory.cs" />
+    <Compile Include="Utilities\Loot\ExpGainScreen.cs" />
+    <Compile Include="Utilities\Loot\ItemLootInfo.cs" />
+    <Compile Include="Utilities\Loot\LootList.cs" />
+    <Compile Include="Utilities\Loot\LootScreen.cs" />
+    <Compile Include="Utilities\LUA\Ability\LuaAbilityProcessor.cs" />
+    <Compile Include="Utilities\LUA\BattleScripts\BattleScriptHandler.cs" />
+    <Compile Include="Utilities\LUA\BattleScripts\LuaBScriptEvent.cs" />
+    <Compile Include="Utilities\LUA\DataProvider.cs" />
+    <Compile Include="Utilities\LUA\ListDataProvider.cs" />
+    <Compile Include="Utilities\LUA\LuaData.cs" />
+    <Compile Include="Utilities\LUA\LuaDialogue.cs" />
+    <Compile Include="Utilities\LUA\LuaExecutionList.cs" />
+    <Compile Include="Utilities\LUA\LuaGameClass.cs" />
+    <Compile Include="Utilities\LUA\LuaMapHelp.cs" />
+    <Compile Include="Utilities\LUA\LuaSaveData.cs" />
+    <Compile Include="Utilities\LUA\LuaScriptBattle.cs" />
+    <Compile Include="Utilities\Map Processing\ReflectionProcessor.cs" />
+    <Compile Include="Utilities\Map\BasicMap.cs" />
+    <Compile Include="Utilities\Map\Buildings\Building.cs" />
+    <Compile Include="Utilities\Map\Buildings\BuildingGenerator.cs" />
+    <Compile Include="Utilities\Map\LevelHandler.cs" />
+    <Compile Include="Utilities\Map\MapEditorWaypoint.cs" />
+    <Compile Include="Utilities\Map\MapInfoChart.cs" />
+    <Compile Include="Utilities\Map\MapListUtility.cs" />
+    <Compile Include="Utilities\Map\MapRegion.cs" />
+    <Compile Include="Utilities\Map\MapSaveInfo.cs" />
+    <Compile Include="Utilities\Map\MapZone.cs" />
+    <Compile Include="Utilities\Map\Tiles\BasicTile.cs" />
+    <Compile Include="Utilities\Map\Tiles\EmptyTile.cs" />
+    <Compile Include="Utilities\Map\Tiles\TileSheet.cs" />
+    <Compile Include="Utilities\Map\Tiles\TileSource.cs" />
+    <Compile Include="Utilities\Map\Zones\ZoneEncounterInfo.cs" />
+    <Compile Include="Utilities\OnScreen\ActiveUIElement.cs" />
+    <Compile Include="Utilities\OnScreen\TurnEffect\ChangeTurnEffect.cs" />
+    <Compile Include="Utilities\OnScreen\UIElements\TextElement.cs" />
+    <Compile Include="Utilities\Particles\ParticleAnimation.cs" />
+    <Compile Include="Utilities\Particles\ParticleSystemSource.cs" />
+    <Compile Include="Utilities\Particles\ParticleTest.cs" />
+    <Compile Include="Utilities\Player\PlayerGameInfo.cs" />
+    <Compile Include="Utilities\Player\PlayerSaveData.cs" />
+    <Compile Include="Utilities\Player\SaveDataProcessor.cs" />
+    <Compile Include="Utilities\ReadWrite\FileWriter.cs" />
+    <Compile Include="Utilities\ReadWrite\TestSerialize.cs" />
+    <Compile Include="Utilities\SelectionUtility.cs" />
+    <Compile Include="Utilities\GamePlay\Characters\Hostile\BasicEnemy.cs" />
+    <Compile Include="Utilities\GamePlay\Characters\Hostile\Target.cs" />
+    <Compile Include="Utilities\GamePlay\Spells\ShotPattern\BasicPattern.cs" />
+    <Compile Include="Utilities\GamePlay\Spells\ShotPattern\SpreadShot.cs" />
+    <Compile Include="Utilities\GamePlay\Spells\ShotPattern\StraightShot.cs" />
+    <Compile Include="Utilities\GamePlay\Spells\Spell.cs" />
+    <Compile Include="Utilities\GamePlay\Spells\SpellMissile.cs" />
+    <Compile Include="Utilities\GamePlay\Spells\SpellsAssetLoader.cs" />
+    <Compile Include="Utilities\GamePlay\Spells\SpellType.cs" />
+    <Compile Include="Utilities\GamePlay\Stats\BasicStatChart.cs" />
+    <Compile Include="Utilities\Input\StatusEffects.cs" />
+    <Compile Include="Utilities\InputControl.cs" />
+    <Compile Include="Utilities\Input\ScreenButton.cs" />
+    <Compile Include="Utilities\Input\CursorUtility.cs" />
+    <Compile Include="Utilities\Input\InputButton.cs" />
+    <Compile Include="Utilities\Input\SliderButton.cs" />
+    <Compile Include="Utilities\KeyboardMouseUtility.cs" />
+    <Compile Include="Utilities\OnScreen\GUI\MainGUI.cs" />
+    <Compile Include="Utilities\OnScreen\Particles\Cursor.cs" />
+    <Compile Include="Utilities\OnScreen\Particles\Shape.cs" />
+    <Compile Include="Utilities\OnScreen\WindowPopUp.cs" />
+    <Compile Include="Utilities\ResolutionUtility.cs" />
+    <Compile Include="Utilities\SceneUtility.cs" />
+    <Compile Include="Utilities\SettingsUtils\SettingsFile.cs" />
+    <Compile Include="Utilities\SettingsUtils\SettingsMenu.cs" />
+    <Compile Include="Utilities\SoundEffectSong\SoundEffectSong.cs" />
+    <Compile Include="Utilities\Sound\BG\BGInfo.cs" />
+    <Compile Include="Utilities\Sound\BG\MenuSongAssestLoader.cs" />
+    <Compile Include="Utilities\Sound\BG\MusicBGPlayer.cs" />
+    <Compile Include="Utilities\Sound\SFX\SFXInfo.cs" />
+    <Compile Include="Utilities\Sound\SFX\SFXProcessor.cs" />
+    <Compile Include="Utilities\Sound\SoundController.cs" />
+    <Compile Include="Utilities\Sprite\Animations\ShapeAnimation.cs" />
+    <Compile Include="Utilities\Sprite\BaseSprite.cs" />
+    <Compile Include="Utilities\Sprite\BaseSpriteInfoHolder.cs" />
+    <Compile Include="Utilities\Sprite\EditorObjectSelection.cs" />
+    <Compile Include="Utilities\Sprite\NPC.cs" />
+    <Compile Include="Utilities\Sprite\ObjectGroup.cs" />
+    <Compile Include="Utilities\Sprite\SpriteLight.cs" />
+    <Compile Include="Utilities\SriptProcessing\BaseScript.cs" />
+    <Compile Include="Utilities\SriptProcessing\ScriptBool.cs" />
+    <Compile Include="Utilities\SriptProcessing\ScripTestingScene.cs" />
+    <Compile Include="Utilities\SriptProcessing\ScriptProcessor.cs" />
+    <Compile Include="Utilities\SriptProcessing\ScriptTriggers\BasicTrigger.cs" />
+    <Compile Include="Utilities\SriptProcessing\Various\TriggerZone.cs" />
+    <Compile Include="Utilities\StartScreen\LoadGameScreen.cs" />
+    <Compile Include="Utilities\StartScreen\StartScreen.cs" />
+    <Compile Include="Utilities\Statistics\BattleStats.cs" />
+    <Compile Include="Utilities\Statistics\CharacterBattleStats.cs" />
+    <Compile Include="Utilities\Talents\BaseTalentSlot.cs" />
+    <Compile Include="Utilities\Talents\ClassUnlockTalent.cs" />
+    <Compile Include="Utilities\Talents\NodeConnection.cs" />
+    <Compile Include="Utilities\Talents\TalentGrid.cs" />
+    <Compile Include="Utilities\Talents\TalentNode.cs" />
+    <Compile Include="Utilities\TestEnvironment.cs" />
+    <Compile Include="Utilities\Test\ThunderEffect.cs" />
+    <Compile Include="Utilities\Text\NiceText.cs" />
+    <Compile Include="Utilities\Text\TextUtility.cs" />
+    <Compile Include="Utilities\UIElements\Elements\BaseUIElement.cs" />
+    <Compile Include="Utilities\UIElements\Elements\GButton.cs" />
+    <Compile Include="Utilities\UIElements\Elements\UICollection.cs" />
+    <Compile Include="Utilities\UIElements\Elements\UIGrid.cs" />
+    <Compile Include="Utilities\UIElements\Elements\UIGridTabItem.cs" />
+    <Compile Include="Utilities\UIElements\Elements\UINumericInput.cs" />
+    <Compile Include="Utilities\UIElements\Elements\UIScreenSlider.cs" />
+    <Compile Include="Utilities\UIElements\Elements\UITextElement.cs" />
+    <Compile Include="Utilities\UIElements\UIScreen.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="KopiLua">
+      <HintPath>..\net45\KopiLua.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=3.6.0.1625, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="NLua">
+      <HintPath>..\net45\NLua.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\FX\Combat\CombatObject.fx" />
+    <Content Include="Content\FX\Combat\Intro.fx" />
+    <Content Include="Content\FX\Environment\2DHeight.fx" />
+    <Content Include="Content\FX\Environment\2DHeightMap.fx" />
+    <Content Include="Content\FX\Environment\NewShadows.fx" />
+    <Content Include="Content\FX\Environment\ThunderShadow.fx" />
+    <Content Include="Content\FX\Environment\WaterExtract.fx" />
+    <Content Include="Content\FX\Environment\WaterReflection3.fx" />
+    <Content Include="Content\FX\Environment\WaterReflection2.fx" />
+    <Content Include="Content\FX\Environment\WaterReflection.fx" />
+    <Content Include="Content\FX\GrassEffect.fx" />
+    <Content Include="Content\FX\LightMask.fx" />
+    <Content Include="Content\FX\ShapeEffect.fx" />
+    <Content Include="Content\FX\TestFX.fx" />
+    <Content Include="Content\FX\Text\TextLining.fx" />
+    <None Include="Content\LUA\Abilities\Poison_Arrow.Lua" />
+    <None Include="Content\LUA\Abilities\Mind_Control.Lua" />
+    <None Include="Content\LUA\Abilities\Natures_Boon.Lua" />
+    <None Include="Content\LUA\Abilities\Long_Shot.Lua" />
+    <None Include="Content\LUA\Abilities\Mind_Spin.Lua" />
+    <None Include="Content\LUA\Abilities\Fire_Breath.Lua" />
+    <None Include="Content\LUA\Abilities\Fire_Explosion.Lua" />
+    <None Include="Content\LUA\Abilities\Intimidate.Lua" />
+    <None Include="Content\LUA\Abilities\Steel_Hurricane.Lua" />
+    <None Include="Content\LUA\AI\Goblin\skirmisher.lua" />
+    <None Include="Content\LUA\GameClasses\Mage\MageClass.lua" />
+    <None Include="Content\LUA\GameClasses\Druid\DruidClass.lua" />
+    <None Include="Content\LUA\GameClasses\EXP\layout1.Lua">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\LUA\GameClasses\Archer\ArcherClass.lua" />
+    <None Include="Content\LUA\GameClasses\Knight\KnightClass.lua" />
+    <None Include="Content\LUA\Intro\IntroBattle.lua">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\LUA\LUADB.txt" />
+    <None Include="Content\LUA\Abilities\Slash1.Lua" />
+    <Content Include="Content\Mods\info.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icon.ico" />
+    <Content Include="QuickRef.txt" />
+    <Content Include="Scripts\attention.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SpriteContent\build.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Design\BattleScreen\BGUI.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="app.config" />
+    <None Include="Content\Design\BattleScreen\BGUIver2.xnb" />
+    <None Include="Content\Design\BattleScreen\CastleBBG.xnb" />
+    <None Include="Content\Design\ChoiceIndicator.xnb" />
+    <None Include="Content\Editor\MapEditor\Grid.xnb" />
+    <None Include="Content\Fonts\Design\BGUI\Ability\BigAbiFont_64.xnb" />
+    <None Include="Content\Fonts\Design\BGUI\Ability\HugeAbiFont_70.xnb" />
+    <None Include="Content\Fonts\Design\BGUI\Ability\MedAbiFont_56.xnb" />
+    <None Include="Content\Fonts\Design\BGUI\Ability\SmallAbiFont_48.xnb" />
+    <None Include="Content\Fonts\Design\BGUI\Ability\TinyAbiFont_32.xnb" />
+    <None Include="Content\Fonts\Design\BGUI\Bars\BarsFont_22.xnb" />
+    <None Include="Content\Fonts\Design\BGUI\Chances\ChanceFont_32.xnb" />
+    <None Include="Content\Fonts\Design\BGUI\Modifiers\ModifierFont_32.xnb" />
+    <None Include="Content\Fonts\Design\BGUI\Name\BigNameFont_58.xnb" />
+    <None Include="Content\Fonts\Design\BGUI\Name\MediumNameFont_48.xnb" />
+    <None Include="Content\Fonts\Design\BGUI\Name\SmallNameFont_32.xnb" />
+    <Content Include="Content\FX\Environment\TestRenderEffect.fx" />
+    <None Include="Content\Graphics\Characters\Friendly\character_Archer_sheet_2048x2048.xnb" />
+    <None Include="Content\Graphics\Characters\Friendly\TOM.xnb" />
+    <None Include="Content\Graphics\Characters\Hostile\GOBLIN.xnb" />
+    <None Include="Content\Graphics\Items\Icons\FistIcon.xnb" />
+    <None Include="Content\Graphics\Items\Icons\ShieldIcon.xnb" />
+    <None Include="Content\Graphics\Maps\Overlay\OverlayFree.xnb" />
+    <None Include="Content\Graphics\Maps\Overlay\OverlayMagic.xnb" />
+    <None Include="Content\Graphics\Maps\Overlay\OverlayMelee.xnb" />
+    <None Include="Content\Graphics\Maps\Overlay\OverlayMovement.xnb" />
+    <None Include="Content\Graphics\Maps\Overlay\OverlayRanged.xnb" />
+    <None Include="Content\Graphics\Tiles\CF\Backup.xnb" />
+    <None Include="Content\Graphics\Tiles\CF\Castle.xnb" />
+    <None Include="Content\LUA\test.lua" />
+    <None Include="Content\Sound\SoundFX\SFX.xgs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sound\SoundFX\Sound Bank.xsb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Sound\SoundFX\Wave Bank.xwb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\TempTexture.xnb" />
+    <None Include="Maps\GameTS\TileSheets\DefaultTile.cgtsc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Maps\GameTS\TileSheets\TestTileSet.cgtsc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Scripts\taglist.txt" />
+    <Content Include="TBAGW\Characters\Abilities\txt.txt" />
+    <Content Include="TBAGW\Characters\Classes\note.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TBAGW\Maps\TileSheets\DefaultTile.cgtsc" />
+    <Content Include="TBAGW\Maps\TileSheets\TestTileSet.cgtsc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="TBAGW\Maps\TileSheets\IDTestTS.cgtsc" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Effects\" />
+    <Folder Include="Content\FX\Noise\" />
+    <Folder Include="Content\Graphics\GUI\SmallGUIPics\" />
+    <Folder Include="Content\Graphics\LightMasks\" />
+    <Folder Include="Content\LUA\Base\Enemy\" />
+    <Folder Include="Content\Sound\BG\Battle\Theme1\" />
+    <Folder Include="Content\Sound\BG\Main\" />
+    <Folder Include="Forms\Lua\" />
+    <Folder Include="GameHandle\Maps\" />
+    <Folder Include="MonoGame\" />
+    <Folder Include="Scenes\Editor\TileSheetMaker\" />
+    <Folder Include="Scenes\MainGame\Battle\BattleScreen\" />
+    <Folder Include="Utilities\Effects\" />
+    <Folder Include="Utilities\GamePlay\CharacterMenus\Equipment\" />
+    <Folder Include="Utilities\GamePlay\CharacterMenus\Inventory\" />
+    <Folder Include="Utilities\GamePlay\CharacterMenus\Skills\" />
+    <Folder Include="Utilities\GamePlay\CharacterMenus\Summary\" />
+    <Folder Include="Utilities\GamePlay\Characters\AI\" />
+    <Folder Include="Utilities\GamePlay\Characters\Neutral\" />
+    <Folder Include="Utilities\GamePlay\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Editor\EditorBG.xnb" />
+    <None Include="Content\Editor\General\ActiveTextInput.xnb" />
+    <None Include="Content\Editor\MapEditor\DefaultTile.xnb" />
+    <None Include="Content\Editor\MapEditor\LowerSelectBarAddButton.xnb" />
+    <None Include="Content\Editor\MapEditor\LowerSelectBarBG.xnb" />
+    <None Include="Content\Editor\MapEditor\LowerSelectBarSeparate.xnb" />
+    <None Include="Content\Editor\MapEditor\SmallerWindowBox.xnb" />
+    <None Include="Content\Editor\MapEditor\SmallerWindowBoxMinimize.xnb" />
+    <None Include="Content\Editor\Scripts\TextWindowBG.xnb" />
+    <None Include="Content\Editor\Scripts\TextWindowFont.xnb" />
+    <None Include="Content\Fonts\DefaultFont.xnb" />
+    <None Include="Content\Fonts\GUIFontSmall.xnb" />
+    <None Include="Content\Fonts\InputOptionsFont.xnb" />
+    <None Include="Content\Fonts\MainMenuFont.xnb" />
+    <None Include="Content\Fonts\OptionsFont.xnb" />
+    <None Include="Content\Fonts\test.xnb" />
+    <None Include="Content\Graphics\Characters\Friendly\BasicHero.xnb" />
+    <None Include="Content\Graphics\Characters\Friendly\BasicTeam\BasicTeam.xnb" />
+    <None Include="Content\Graphics\Characters\Hostile\BasicEnemy.xnb" />
+    <None Include="Content\Graphics\Characters\TempChar.xnb" />
+    <None Include="Content\Graphics\Cursor\CursorV1.xnb" />
+    <None Include="Content\Graphics\GUI\BigGUIPics\TestBigProf.xnb" />
+    <None Include="Content\Graphics\GUI\Layout\BigFrame.xnb" />
+    <None Include="Content\Graphics\GUI\Layout\SpellBar.xnb" />
+    <None Include="Content\Graphics\GUI\Layout\TopLeftBG.xnb" />
+    <None Include="Content\Graphics\HitBoxHelp.xnb" />
+    <None Include="Content\Graphics\MainGame\Background\Field.xnb" />
+    <None Include="Content\Graphics\MainGame\PopUp\PopUpTexture.xnb" />
+    <None Include="Content\Graphics\MainMenu\BackGroundMM1.xnb" />
+    <None Include="Content\Graphics\MainMenu\BackGroundMM2.xnb" />
+    <None Include="Content\Graphics\MainMenu\BackGroundMM3.xnb" />
+    <None Include="Content\Graphics\MainMenu\BackGroundMMBG.xnb" />
+    <None Include="Content\Graphics\MainMenu\BackGroundMMFG.xnb" />
+    <None Include="Content\Graphics\MainMenu\MMClouds.xnb" />
+    <None Include="Content\Graphics\MainMenu\TestRectangle.xnb" />
+    <None Include="Content\Graphics\OptionsMenu\SelectionWindow.xnb" />
+    <None Include="Content\Graphics\OptionsMenu\SliderBaseTexture.xnb" />
+    <None Include="Content\Graphics\OptionsMenu\SliderButtonTexture.xnb" />
+    <None Include="Content\Graphics\Particles\Effects\16Pixels.xnb" />
+    <None Include="Content\Graphics\Particles\Effects\Arrow.xnb" />
+    <None Include="Content\Graphics\Particles\Effects\Circles.xnb" />
+    <None Include="Content\Graphics\Particles\Effects\ComplexSprite1.xnb" />
+    <None Include="Content\Graphics\Particles\Effects\Cone.xnb" />
+    <None Include="Content\Graphics\Particles\Effects\Donut1.xnb" />
+    <None Include="Content\Graphics\Particles\Spells\Kabutops.xnb" />
+    <None Include="Content\Graphics\Particles\Spells\Missile\basicMissileSpriteSheet.xnb" />
+    <None Include="Content\Graphics\Particles\Spells\Missile\SpellOverlay.xnb" />
+    <None Include="Content\Graphics\Particles\Spells\ProtosBall.xnb" />
+    <None Include="Content\Graphics\Particles\Spells\SpikeBall\SpikeBallSpriteSheet.xnb" />
+    <None Include="Content\Graphics\Particles\Spells\SpinningHoverBoard.xnb" />
+    <None Include="Content\Graphics\Particles\Spells\TheHeart.xnb" />
+    <None Include="Content\Graphics\Particles\Spells\TipOfTheIceberg.xnb" />
+    <None Include="Content\Graphics\SpriteCollections\BasicEnemy.xnb" />
+    <None Include="Content\Graphics\SpriteCollections\basicMissileSpriteSheet.xnb" />
+    <None Include="Content\Graphics\SpriteCollections\Field.xnb" />
+    <None Include="Content\Graphics\SpriteCollections\SpikeBallSpriteSheet.xnb" />
+    <None Include="Content\Graphics\SpriteCollections\spritesheet.xnb" />
+    <None Include="Content\Graphics\TestTexture.xnb" />
+    <None Include="Content\Graphics\TestTileSet.xnb" />
+    <None Include="Content\Graphics\Test\SpriteSheet\spritesheet.xnb" />
+    <None Include="Content\Graphics\Tiles\Basic\BorderTest.xnb" />
+    <None Include="Content\Graphics\Tiles\BorderTest.xnb" />
+    <None Include="Content\Graphics\Tiles\DefaultTile.xnb" />
+    <None Include="Content\Graphics\Tiles\TestTileSet.xnb" />
+    <None Include="Content\Graphics\Tiles\Test\TestTileSet.xnb" />
+    <None Include="Game1_TemporaryKey.pfx" />
+    <Content Include="Maps\TileSheets\TestTileSet.cgts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Maps\TileSheets\DefaultTile.cgts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Abilities\AbilityEditor.resx">
+      <DependentUpon>AbilityEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Abilities\CharAbilitiesForm.resx">
+      <DependentUpon>CharAbilitiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Animation\AnimationEditor.resx">
+      <DependentUpon>AnimationEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bools\ScrptBoolCheckEditor.resx">
+      <DependentUpon>ScrptBoolCheckEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CharacterEditorForm.resx">
+      <DependentUpon>CharacterEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Characters\CharacterPortraitEditor.resx">
+      <DependentUpon>CharacterPortraitEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Characters\CharacterUniqueEditor.resx">
+      <DependentUpon>CharacterUniqueEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Characters\ClassCollectionEditor.resx">
+      <DependentUpon>ClassCollectionEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FTP Utility\FTPWindow.resx">
+      <DependentUpon>FTPWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameClasses\AbilitySelector.resx">
+      <DependentUpon>AbilitySelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameClasses\ClassLevelUpLayout.resx">
+      <DependentUpon>ClassLevelUpLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameClasses\CreateClassForm.resx">
+      <DependentUpon>CreateClassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameClasses\ExperienceLayoutEditor.resx">
+      <DependentUpon>ExperienceLayoutEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameClasses\GameClassCreator.resx">
+      <DependentUpon>GameClassCreator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameObjects\CopyCharForm.resx">
+      <DependentUpon>CopyCharForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameObjects\GlobalObjectEditor.resx">
+      <DependentUpon>GlobalObjectEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameObjects\ObjectGroupEditorForm.resx">
+      <DependentUpon>ObjectGroupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameObjects\ObjectInfoWindow.resx">
+      <DependentUpon>ObjectInfoWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameObjects\ObjectManager.resx">
+      <DependentUpon>ObjectManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameObjects\ObjectSelector.resx">
+      <DependentUpon>ObjectSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameObjects\SpriteEditorForm.resx">
+      <DependentUpon>SpriteEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\General\ActiveSTATForm.resx">
+      <DependentUpon>ActiveSTATForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\General\ModifierEditor.resx">
+      <DependentUpon>ModifierEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\General\STATChartForm.resx">
+      <DependentUpon>STATChartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemCreation\ConsumableEditor.resx">
+      <DependentUpon>ConsumableEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemCreation\EquipItemEditor.resx">
+      <DependentUpon>EquipItemEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemCreation\EquipmentSelection.resx">
+      <DependentUpon>EquipmentSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemCreation\ItemCreator.resx">
+      <DependentUpon>ItemCreator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemCreation\ItemFind.resx">
+      <DependentUpon>ItemFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemCreation\ItemSelection.resx">
+      <DependentUpon>ItemSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemCreation\KeyItemEditor.resx">
+      <DependentUpon>KeyItemEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemCreation\MaterialEditor.resx">
+      <DependentUpon>MaterialEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemCreation\SimpleEquipmentSelection.resx">
+      <DependentUpon>SimpleEquipmentSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Loot editor\LootEditor.resx">
+      <DependentUpon>LootEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Loot editor\LootItemInfoEditor.resx">
+      <DependentUpon>LootItemInfoEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NPC Editor\NPC Editor.resx">
+      <DependentUpon>NPC Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Particle Animation\PAEditor.resx">
+      <DependentUpon>PAEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Particle Animation\PASelection.resx">
+      <DependentUpon>PASelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ParticleEditor\ParticleEditor.resx">
+      <DependentUpon>ParticleEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayTestForms\GenerateRandomZoneEncounterForm.resx">
+      <DependentUpon>GenerateRandomZoneEncounterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\CommandSelectForm.resx">
+      <DependentUpon>CommandSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptBaseForm.resx">
+      <DependentUpon>ScriptBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\CPPCommand.resx">
+      <DependentUpon>CPPCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\CSBCommand.resx">
+      <DependentUpon>CSBCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\CTMCommand.resx">
+      <DependentUpon>CTMCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\CWBCommand.resx">
+      <DependentUpon>CWBCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\DLHCommand.resx">
+      <DependentUpon>DLHCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\DSTCommand.resx">
+      <DependentUpon>DSTCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\DTTCommand.resx">
+      <DependentUpon>DTTCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\LayoutSTD.resx">
+      <DependentUpon>LayoutSTD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\MCTCommand.resx">
+      <DependentUpon>MCTCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\MSGCommand.resx">
+      <DependentUpon>MSGCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\TEXTCommand.resx">
+      <DependentUpon>TEXTCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\TGOCommand.resx">
+      <DependentUpon>TGOCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\THECommand.resx">
+      <DependentUpon>THECommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\TIFCommand.resx">
+      <DependentUpon>TIFCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\TLBCommand.resx">
+      <DependentUpon>TLBCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\TLHCommand.resx">
+      <DependentUpon>TLHCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\TPHCommand.resx">
+      <DependentUpon>TPHCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\TRECommand.resx">
+      <DependentUpon>TRECommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\TRCCommand.resx">
+      <DependentUpon>TRCCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\TSMCommand.resx">
+      <DependentUpon>TSMCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptCommandForms\TSPCommand.resx">
+      <DependentUpon>TSPCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\ScriptOverview.resx">
+      <DependentUpon>ScriptOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForms\TestWarningPopUp.resx">
+      <DependentUpon>TestWarningPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SoundEditorForm.resx">
+      <DependentUpon>SoundEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sound\SongEncrypt.resx">
+      <DependentUpon>SongEncrypt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sound\SoundFXCreator.resx">
+      <DependentUpon>SoundFXCreator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TileSheetEditor\ProcessSheetForm.resx">
+      <DependentUpon>ProcessSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ZonesRegions\AddEnemyForm.resx">
+      <DependentUpon>AddEnemyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ZonesRegions\RegionEditor.resx">
+      <DependentUpon>RegionEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ZonesRegions\ZoneEditor.resx">
+      <DependentUpon>ZoneEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Steamworks.NET-master\Steamworks.NET-master\Standalone\Steamworks.NET.csproj">
+      <Project>{b3543600-587c-4fdc-994a-cb0bdc629a7e}</Project>
+      <Name>Steamworks.NET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CrossProjectLibrary\CrossProjectLibrary.csproj">
+      <Project>{4bc3fdc4-eaa6-470c-a4e3-b26743f6be72}</Project>
+      <Name>CrossProjectLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>XCOPY "$(SolutionDir)Game1\Content\LUA\*" "$(TargetDir)Content\LUA\*" /s /i /y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

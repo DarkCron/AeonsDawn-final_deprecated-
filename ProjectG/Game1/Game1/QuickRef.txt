@@ -1,0 +1,156 @@
+﻿ YES NO TEXTBOX     
+	                        System.Windows.Forms.DialogResult dialogResult = System.Windows.Forms.MessageBox.Show("Sure", "Some Title", System.Windows.Forms.MessageBoxButtons.YesNo);
+                            if (dialogResult == System.Windows.Forms.DialogResult.Yes)
+                            {
+                                //do something
+                            }
+                            else if (dialogResult == System.Windows.Forms.DialogResult.No)
+                            {
+                                //do something else
+                            }
+
+COLLAPSE ALL
+CTRL+M , O
+
+CONTENT FILE LOADER: has logic for both programmer and end-user
+
+                                   SaveFileDialog savePrefab = new SaveFileDialog();
+                if (TBAGW.Game1.bIsDebug)
+                {
+                    savePrefab.Filter = "Prefab file|*.cgprefabc";
+                    savePrefab.InitialDirectory = TBAGW.Game1.rootTBAGW;
+
+                }
+                else
+                {
+                    savePrefab.Filter = "Prefab file|*.cgprefab";
+                    savePrefab.InitialDirectory = TBAGW.Game1.rootContentExtra;
+                }
+
+                savePrefab.Title = "save prefab";
+                DialogResult dia = savePrefab.ShowDialog();
+                if (DialogResult.OK == dia && savePrefab.FileName.Contains(savePrefab.InitialDirectory))
+                {
+                    String fi = savePrefab.FileName;
+                    EditorFileWriter.PreFabWriter((ObjectGroup)listBox2.SelectedItem,fi);
+                }
+                else if (System.Windows.Forms.DialogResult.Cancel == dia)
+                {
+                   
+                    System.Windows.Forms.MessageBox.Show("Cancelled, returning to Editor.");
+                }else if(!savePrefab.FileName.Contains(savePrefab.InitialDirectory)) {
+                    System.Windows.Forms.MessageBox.Show("Save within mods folder please.");
+                }
+
+From tile position vector2 to tile index maptiles
+					i = (int)(gridPos.X * (mapSize.Y)) + (int)gridPos.Y;
+
+XACT
+soundbank.xsb
+engine.xgs
+wavebank.xwb
+
+External render window:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Content;
+
+namespace TBAGW.Utilities.Particles
+{
+    public class ParticleTest : Game
+    {
+        public GraphicsDeviceManager graphics;
+        public SpriteBatch spriteBatch;
+
+        public ParticleTest()
+        {
+            graphics = new GraphicsDeviceManager(this);
+            graphics.PreferMultiSampling = false;
+
+            //   this.Window.Position = new Point(100, 100);
+            //graphics.IsFullScreen = true;
+            this.IsMouseVisible = false;
+            graphics.ApplyChanges();
+            Content.RootDirectory = "Content";
+        }
+
+        protected override void BeginRun()
+        {
+            Initialize();
+        }
+
+
+        protected override void Initialize()
+        {
+
+            graphics.PreferMultiSampling = true;
+            graphics.PreferredBackBufferWidth = 300;
+            graphics.PreferredBackBufferHeight = 300;
+            //   this.Window.Position = new Point(100, 100);
+            //graphics.IsFullScreen = true;
+            this.IsMouseVisible = false;
+            graphics.ApplyChanges();
+
+            spriteBatch = new SpriteBatch(graphics.GraphicsDevice);
+
+            base.Initialize();
+        }
+
+        protected override void LoadContent()
+        {
+            base.LoadContent();
+            spriteBatch = new SpriteBatch(GraphicsDevice);
+        }
+
+        protected override void UnloadContent()
+        {
+            base.UnloadContent();
+        }
+
+        protected override void Update(GameTime gameTime)
+        {
+
+            base.Update(gameTime);
+        }
+
+        protected override void Draw(GameTime gameTime)
+        {
+            //base.Draw(gameTime);
+            graphics.GraphicsDevice.Clear(Color.Green);
+            GraphicsDevice.Clear(Color.Green);
+            spriteBatch.Begin();
+            //Do not try to load in external textures like this
+           // spriteBatch.Draw(Game1.hitboxHelp, new Rectangle(50, 75, 250, 523), Color.Bisque);
+            spriteBatch.End();
+
+            base.Draw(gameTime);
+        }
+    }
+}
+
+
+Threading:
+
+                pst = new PS.ParticleTest();
+                ParticleEditorThread = new Thread(new ThreadStart(pst.Run));
+                ParticleEditorThread.SetApartmentState(ApartmentState.STA);
+                ParticleEditorThread.Start();
+
+SEARCH BOX LOGIC
+            if (textBox1.Text.Equals(""))
+            {
+                listBox1.DataSource = null;
+                listBox1.DataSource = (MapBuilder.gcDB.gameItems.FindAll(i => i.itemType == BaseItem.ITEM_TYPES.Equipment).Cast<BaseEquipment>().ToList().FindAll(i => i.EquipType == selectedItemType).ToArray());
+            }
+            else if (!textBox1.Text.Equals(""))
+            {
+                listBox1.DataSource = null;
+                //  listBox1.Items.AddRange(MapBuilder.loadedMap.mapRegions.FindAll(r => r.regionName.IndexOf(textBox1.Text, StringComparison.OrdinalIgnoreCase) >= 0).ToArray());
+                listBox1.DataSource = (MapBuilder.gcDB.gameItems.FindAll(i => i.itemType == BaseItem.ITEM_TYPES.Equipment).Cast<BaseEquipment>().ToList().FindAll(i => i.EquipType == selectedItemType).FindAll(i => i.itemName.IndexOf(textBox1.Text, StringComparison.OrdinalIgnoreCase) >= 0));
+            }
